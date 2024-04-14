@@ -1,3 +1,4 @@
+# Student A
 def encoder( password):
     encoded=""
     for digit in password:
