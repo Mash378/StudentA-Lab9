@@ -8,6 +8,17 @@ def encoder( password):
             encoded= encoded +str(int(digit)+3)
     return encoded
 
+def decoder(encoded):
+    Decoded=""
+    for digit in encoded:
+        if int(digit) -3<0:
+            n=10 -1*(int(digit)-3)
+            Decoded = Decoded + str(digit)
+        else:
+            Decoded= Decoded + str(int(digit)-3)
+    return Decoded
+
+
 def main ():
     Password=""
     encoded=""
